@@ -5,7 +5,7 @@ class PagesController < ApplicationController
   def brogramming
   end
 
-  def health/fitness
+  def fitness
   end
 
   def about
