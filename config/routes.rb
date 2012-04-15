@@ -2,7 +2,7 @@ Blog::Application.routes.draw do
 
    get "pages/home"
    get "pages/brogramming"
-   get "pages/health/fitness"
+   get "pages/fitness"
    get "pages/about"
    get "pages/contact"
 
