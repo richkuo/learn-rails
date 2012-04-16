@@ -7,6 +7,12 @@ Blog::Application.routes.draw do
    get "pages/contact"
 
 
+   root to: 'pages#home'
+   match 'brogramming', to: 'pages#brogramming'
+   match 'fitness', to: 'pages#fitness'
+   match 'about', to: 'pages#about'
+   match 'contact', to: 'pages#contact'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
