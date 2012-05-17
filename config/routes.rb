@@ -6,14 +6,14 @@ Blog::Application.routes.draw do
    get "pages/fitness"
    get "pages/about"
    get "pages/contact"
-   get "users/new"
+   get "pages/signup"
 
    root to: 'pages#home'
    match 'brogramming', to: 'pages#brogramming'
    match 'fitness', to: 'pages#fitness'
    match 'about', to: 'pages#about'
    match 'contact', to: 'pages#contact'
-   match 'signup', to: 'users#new'
+   match 'signup', to: 'pages#signup'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
