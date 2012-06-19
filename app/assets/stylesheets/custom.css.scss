@@ -1,4 +1,4 @@
-// @import "twitter/bootstrap";
+@import "bootstrap";
 
 $grayMediumLight: #eaeaea;
 $grayLighter: #eaeaea;
@@ -8,6 +8,22 @@ $grayLighter: #eaeaea;
    -webkit-box-sizing: border-box;
    box-sizing: border-box;
 }
+
+/* header */
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: teal;
+  padding-top: 10px;
+  font-weight: bold;
+  &:hover {
+    color: white;
+    text-decoration: bold;
+  }
+}
+
 
 /* miscellaneous */
 
