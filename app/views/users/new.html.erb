@@ -1,15 +1,13 @@
 <%= provide(:title, 'Sign up') %>
-<h1>New User Sign Up</h1>
+<div class = "center">
+<h1>Sign Up</h1>
+</div>
 
 <div class="row">
-   <div class="span6 offset3">
+   <div class="span6 offset3 hero-unit">
       <%= form_for(@user) do |f| %>
+         <% render 'shared/error_messages' %>
          
-         <% form_for(@user) do |f| %>
-            <% render 'shared/error_messages' %>
-            <% end %>
-
-
          <%= f.label :name %>
          <%= f.text_field :name %>
 
@@ -19,10 +17,10 @@
          <%= f.label :password %>
          <%= f.password_field :password %>
 
-         <%= f.label :password_confirmation, "Confirmation" %>
+         <%= f.label :password_confirmation %>
          <%= f.password_field :password_confirmation %>
 
-         <%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
+         <%= f.submit "Create my account!", class: "btn btn-large btn-primary" %>
       <% end %>
    </div>
 </div>
