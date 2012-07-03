@@ -17,6 +17,8 @@ group :test, :development do
    gem 'rspec-rails', '2.10.0'
    gem 'guard-rspec', '0.5.5'
    gem 'annotate', '~> 2.4.1.beta', group: :development
+   gem 'guard-spork', '0.3.2'
+   gem 'spork', '0.9.0'
 end
 
 # Gems used only for assets and not required
