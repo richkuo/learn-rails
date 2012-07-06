@@ -8,8 +8,10 @@
      <%= form_for(@user) do |f| %>
          <%= render 'shared/error_messages', object: f.object %>
          
-         <%= gravatar_for @user %>
-         <a href="http://gravatar.com/emails">change</a>
+         <div class="span8">
+           <%= gravatar_for @user %>
+           <a href="http://gravatar.com/emails">Change your profile picture</a>
+         </div>
  
          <%= f.label :name %>
          <%= f.text_field :name %>
