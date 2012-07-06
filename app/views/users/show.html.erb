@@ -1,10 +1,19 @@
 <% provide(:title, @user.name) %>
-<h1>
-   <%= gravatar_for @user %>
-   <%= @user.name %>
-</h1>
-<%= @user.name %>, <%= @user.email %>
-</br>
-<%= @user.password %>
-</br>
-Welcom to richkuo.com!
+<div class="row">
+    <section>
+      <h1>
+        <%= gravatar_for @user %>
+        <%= @user.name %>
+      </h1>
+      <%= @user.email %>
+    </section>
+  <div class="span8">
+    <% if @user.microposts.any? %>
+      <h3>Number of posts: (<%= @user.microposts.count %>)</h3>
+      <ol class="microposts">
+        <%= render @microposts %>
+      </ol>
+      <%= will_paginate @microposts %>
+    <% end %>
+  </div>
+</div>
