@@ -116,7 +116,7 @@ section {
 }
 
 textarea {
-  resize: vertical;
+  /* resize: vertical; */
 }
 
 .center {
@@ -126,6 +126,15 @@ textarea {
   }
 }
 
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h2 {
+  color: #999;
+}
 
 /* miscellaneous */
 
@@ -139,6 +148,35 @@ textarea {
 
 /* sidebar */
 
+.stats {
+  overflow: auto;
+  a {
+    float: left;
+    padding: 0 10px;
+    border-left: 1px solid $grayLighter;
+    color: gray;
+    &:first-child {
+      padding-left: 0;
+      border: 0;
+    }
+    &:hover {
+      text-decoration: none;
+      color: $blue;
+    }
+  }
+  strong {
+    display: block;
+  }
+}
+
+.user_avatars {
+  overflow: auto;
+  margin-top: 10px;
+  .gravatar {
+    margin: 1px 1px;
+  }
+}
+
 aside {
    section {
       padding: 10px 0;
@@ -147,7 +185,7 @@ aside {
          border: 0;
          padding-top: 0;
       }
-      spand {
+      span {
          display: block;
          margin-bottom: 3px;
          line-height: 1;
@@ -172,7 +210,8 @@ input, textarea, select, .uneditable-input {
    border: 1px solid #bbb;
    width: 100%;
    padding: 10px;
-   height: auto;
+   height: 40px;
+   font-size: 20px;
    margin-bottom: 15px;
    @include box_sizing;
 }

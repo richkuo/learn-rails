@@ -1,6 +1,5 @@
 module ApplicationHelper
 
-
    def full_title(page_title)
       default_title = "richkuo.com"
       if page_title.empty?

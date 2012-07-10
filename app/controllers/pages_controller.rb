@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
+before_filter :signed_in_user, only: [:brogramming, :fitness]
+
   def home
     if signed_in?
       @micropost = current_user.microposts.build
@@ -18,6 +20,4 @@ class PagesController < ApplicationController
   def contact
   end
 
-  def signup
-  end
 end
