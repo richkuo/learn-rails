@@ -1,4 +1,11 @@
 <% provide(:title, "Sign in") %>
+
+<% if signed_in? %>
+
+<% flash[:error] = "You are already signed in!" %>
+
+<% else %>
+
 <div class="center hero-unit">
 <h1>Sign in</h1>
 </div>
@@ -20,3 +27,4 @@
   </div>
 </div>
 
+<% end %>

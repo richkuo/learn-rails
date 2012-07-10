@@ -1,7 +1,11 @@
 <%= provide(:title, 'Sign up') %>
+
 <% if signed_in? %>
+
 <% flash[:error] = "You are already signed in!" %>
+
 <% else %>
+
 <div class = "center">
 <h1>Sign Up</h1>
 </div>
@@ -16,4 +20,5 @@
       <% end %>
    </div>
 </div>
+
 <% end %>
