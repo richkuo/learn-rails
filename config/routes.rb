@@ -9,17 +9,13 @@ Blog::Application.routes.draw do
    resources :microposts, only: [:create, :destroy]
    resources :relationships, only: [:create, :destroy]
 
-   get "pages/home"
-   get "pages/brogramming"
-   get "pages/fitness"
-   get "pages/about"
-   get "pages/contact"
-
    root to: 'pages#home'
+
    match '/brogramming', to: 'pages#brogramming'
    match '/fitness', to: 'pages#fitness'
    match '/about', to: 'pages#about'
    match '/contact', to: 'pages#contact'
+   
    match '/signup', to: 'users#new'
 
    match '/signin', to: 'sessions#new'

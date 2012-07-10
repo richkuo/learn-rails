@@ -22,10 +22,20 @@
 <div class="hero-unit">
 <h1>Welcome to my website.</h1>
 <h2>Take a minute to sign up!</h2>
-<p>
-<h3 class="center"><%= link_to "Sign up", signup_path , class: "btn btn-large btn-primary" %></h3>
+<br>
+<div class="row">
+  <div class="span6">
+    <%= form_for(@user) do |f| %>
+
+      <%= render 'users/fields', f: f %>
+
+      <%= f.submit "Sign Up", class: "btn btn-large btn-primary" %>
+
+    <% end %>
+  </div>
 </div>
-<div class="center hero-unit">
+</div>
+<div class="hero-unit">
    <h4>Already a member? Awesome! Welcome back. <p><p><%= link_to "Sign in", signin_path, class: "btn btn-large btn-primary" %></h4>
 </div>
 <% end %>
