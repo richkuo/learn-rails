@@ -11,7 +11,6 @@ class MicropostsController < ApplicationController
       flash[:success] = "Post success!"
       redirect_to root_path
     else
-      @feed_items = []
       redirect_to root_path
     end
   end
