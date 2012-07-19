@@ -1,3 +1,1 @@
-This is my blog.
-I will try out RoR stuff on it.
-I will have interesting posts of my adventures.
+Are you a business person looking to break into the developer world? Learn how to get started here.
